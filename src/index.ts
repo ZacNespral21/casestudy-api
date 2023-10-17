@@ -10,10 +10,6 @@ dotenv.config();
 const app: Express = express();
 const port = process.env.PORT || 8080;
 
-// var corsOptions = {
-//   origin: 'http://locahost:3000',
-//   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-// }
 app.use(cors());
 app.use(bodyParser.json());
 app.use(express.json());
